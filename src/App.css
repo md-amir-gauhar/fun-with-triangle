@@ -131,3 +131,77 @@ button:hover {
   font-weight: 600;
   margin-top: 5px;
 }
+
+.quiz {
+  height: 100vh;
+  background-image: url('https://blog.care32dental.com/wp-content/uploads/2016/10/triangle-geometric-background.png');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Source Code Pro', monospace;
+  overflow-y: scroll;
+}
+
+.quiz_back {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.quiz_back:hover {
+  text-decoration: underline;
+}
+
+.quiz_container {
+  margin-top: 10px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.questions {
+  height: 100px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgb(26, 25, 25);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.questions select {
+  max-width: 70%;
+  width: 160px;
+  margin: 0 auto;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.quiz_button {
+  display: block;
+  margin: 10px auto;
+}
+
+.result {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.correct {
+  background-color: green;
+  opacity: 0.9;
+}
+
+.incorrect {
+  background-color: red;
+  opacity: 0.9;
+}
