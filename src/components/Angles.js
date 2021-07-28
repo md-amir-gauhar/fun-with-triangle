@@ -9,7 +9,9 @@ const Angles = () => {
   const [result, setResult] = useState("Enter the inputs to check if it forms a triangle or not");
 
   const handleClick = () => {
-    if (Number(a) < 0 || Number(b) < 0 || Number(c) < 0) {
+    if (a === "" || b === "" || c === "") {
+      setResult('Please, Enter all the fields')
+    } else if (Number(a) <= 0 || Number(b) <= 0 || Number(c) <= 0) {
       setResult("Enter valid values")
     } else if ((Number(a) + Number(b) + Number(c)) < 180 || (Number(a) + Number(b) + Number(c)) > 180) {
       setResult('Sorry these angles cannot form a triangle');
@@ -22,7 +24,7 @@ const Angles = () => {
   return (
     <div className="app">
       <div className="container">
-        <Link to="/" className="back"><i class="fas fa-chevron-left"></i>Go back</Link>
+        <Link to="/" className="back"><i className="fas fa-chevron-left"></i>Go back</Link>
         <h1 className="title">
           What angles (in degrees) form a triangle?
         </h1>

@@ -46,6 +46,7 @@
   justify-content: center;
   text-align: center;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .cell:hover {
@@ -68,6 +69,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   margin: 15px 0;
@@ -91,7 +93,7 @@ button {
 button:hover {
   background-color: #eee;
   color: black;
-  box-shadow: 0 0 10px 7px #111;
+  box-shadow: 0 0 5px 2px #111;
   border: none;
 }
 
@@ -116,4 +118,16 @@ button:hover {
 .back:hover {
   border-bottom: 1px solid black;
   padding-bottom: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.subtext {
+  font-weight: 600;
+  margin-top: 5px;
 }
