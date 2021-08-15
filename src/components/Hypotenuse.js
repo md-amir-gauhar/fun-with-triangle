@@ -13,7 +13,9 @@ const Hypotenuse = () => {
     if (a <= 0 || b <= 0) {
       setResult('Please provide valid inputs');
     } else {
-      setResult(`Hypotenuse is: ${Math.sqrt(Number(a) * Number(a) + Number(b) * Number(b))}`);
+      const res = Math.sqrt(Number(a) * Number(a) + Number(b) * Number(b));
+      const hyp = res.toPrecision(4);
+      setResult(`Hypotenuse is: ${hyp}`);
     }
   }
 
