@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import '../App.css'
 
 const Area = () => {
-  const [base, setBase] = useState("");
-  const [height, setHeight] = useState("");
-  const [side1, setSide1] = useState("");
-  const [side2, setSide2] = useState("");
-  const [side3, setSide3] = useState("");
+  const [base, setBase] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [side1, setSide1] = useState(0);
+  const [side2, setSide2] = useState(0);
+  const [side3, setSide3] = useState(0);
   const [result, setResult] = useState("Enter the inputs to find the area of triangle");
   const [result2, setResult2] = useState("Enter the inputs to find the area of triangle");
 
@@ -24,10 +24,16 @@ const Area = () => {
     if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
       setResult2("Please provide valid inputs");
     } else {
-      const s = (Number(side1) + Number(side2) + Number(side3)) / 2;
-      const res = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-      const area = res.toPrecision(3);
-      setResult2(`Resultant area is : ${area} sq units.`);
+      let s = (Number(side1) + Number(side2) + Number(side3)) / 2;
+      if (side1 === s || side2 === s || side3 === s) {
+        setResult2("Sum of remaining two side should be greater than third");
+      } else {
+        setResult2(
+          `Resultant Area is: ${Math.sqrt(
+            s * (s - side1) * (s - side2) * (s - side3)
+          ).toFixed(2)}`
+        );
+      }
     }
   }
 
