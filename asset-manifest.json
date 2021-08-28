@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/funwithtriangle/static/css/main.fa3bc322.chunk.css",
+    "main.js": "/funwithtriangle/static/js/main.5a8d7345.chunk.js",
+    "main.js.map": "/funwithtriangle/static/js/main.5a8d7345.chunk.js.map",
+    "runtime-main.js": "/funwithtriangle/static/js/runtime-main.143b68cc.js",
+    "runtime-main.js.map": "/funwithtriangle/static/js/runtime-main.143b68cc.js.map",
+    "static/js/2.1b172c77.chunk.js": "/funwithtriangle/static/js/2.1b172c77.chunk.js",
+    "static/js/2.1b172c77.chunk.js.map": "/funwithtriangle/static/js/2.1b172c77.chunk.js.map",
+    "index.html": "/funwithtriangle/index.html",
+    "static/css/main.fa3bc322.chunk.css.map": "/funwithtriangle/static/css/main.fa3bc322.chunk.css.map",
+    "static/js/2.1b172c77.chunk.js.LICENSE.txt": "/funwithtriangle/static/js/2.1b172c77.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.143b68cc.js",
+    "static/js/2.1b172c77.chunk.js",
+    "static/css/main.fa3bc322.chunk.css",
+    "static/js/main.5a8d7345.chunk.js"
+  ]
+}
