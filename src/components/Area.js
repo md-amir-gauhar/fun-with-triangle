@@ -22,20 +22,23 @@ const Area = () => {
 
   const handleClick2 = () => {
     if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
-      setResult2("Please provide valid inputs");
-    } else if (side1 + side2 < side3 || side3 + side2 < side1 || side1 + side3 < side2) {
-      setResult2("Sum of the length of two sides can't be less than length of the third side");
+      setResult("Please provide valid inputs");
+    } else if (
+      Number(side1) + Number(side2) < Number(side3) ||
+      Number(side3) + Number(side3) < Number(side1) ||
+      Number(side1) + Number(side3) < Number(side2)
+    ) {
+      setResult(
+        "Sum of the length of two sides can't be less than length of the third side"
+      );
     } else {
       let s = (Number(side1) + Number(side2) + Number(side3)) / 2;
-      if (side1 === s || side2 === s || side3 === s) {
-        setResult2("Sum of remaining two side should be greater than third");
-      } else {
-        setResult2(
-          `Resultant Area is: ${Math.sqrt(
-            s * (s - side1) * (s - side2) * (s - side3)
-          ).toFixed(2)}`
-        );
-      }
+
+      setResult(
+        `Resultant Area is: ${Math.sqrt(
+          s * (s - side1) * (s - side2) * (s - side3)
+        ).toFixed(2)}`
+      );
     }
   }
 
